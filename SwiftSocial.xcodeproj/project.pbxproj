@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		882D2F142EAEB85900B6C16B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2F112EAEB85900B6C16B /* ContentView.swift */; };
+		882D2F152EAEB85900B6C16B /* SwiftSocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2F122EAEB85900B6C16B /* SwiftSocialApp.swift */; };
+		882D2F162EAEB85900B6C16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882D2F102EAEB85900B6C16B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		882D2F022EAEB58000B6C16B /* SwiftSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		882D2F102EAEB85900B6C16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		882D2F112EAEB85900B6C16B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		882D2F122EAEB85900B6C16B /* SwiftSocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSocialApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		882D2F042EAEB58000B6C16B /* SwiftSocial */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftSocial;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		882D2EFF2EAEB58000B6C16B /* Frameworks */ = {
@@ -32,7 +33,7 @@
 		882D2EF92EAEB58000B6C16B = {
 			isa = PBXGroup;
 			children = (
-				882D2F042EAEB58000B6C16B /* SwiftSocial */,
+				882D2F132EAEB85900B6C16B /* SwiftSocial */,
 				882D2F032EAEB58000B6C16B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,128 @@
 				882D2F022EAEB58000B6C16B /* SwiftSocial.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		882D2F132EAEB85900B6C16B /* SwiftSocial */ = {
+			isa = PBXGroup;
+			children = (
+				882D2F242EAEB8D800B6C16B /* Configs */,
+				882D2F232EAEB8C400B6C16B /* App */,
+				882D2F1A2EAEB87400B6C16B /* Presentation */,
+				882D2F192EAEB87000B6C16B /* Domain */,
+				882D2F182EAEB86B00B6C16B /* Data */,
+				882D2F172EAEB85D00B6C16B /* Utilities */,
+				882D2F222EAEB8B600B6C16B /* Resources */,
+			);
+			path = SwiftSocial;
+			sourceTree = "<group>";
+		};
+		882D2F172EAEB85D00B6C16B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		882D2F182EAEB86B00B6C16B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				882D2F212EAEB8A900B6C16B /* Repositories */,
+				882D2F202EAEB8A300B6C16B /* DataSources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		882D2F192EAEB87000B6C16B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				882D2F1F2EAEB89C00B6C16B /* Models */,
+				882D2F1E2EAEB89400B6C16B /* Repositories */,
+				882D2F1D2EAEB88D00B6C16B /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		882D2F1A2EAEB87400B6C16B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				882D2F1C2EAEB88500B6C16B /* Views */,
+				882D2F1B2EAEB87F00B6C16B /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		882D2F1B2EAEB87F00B6C16B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		882D2F1C2EAEB88500B6C16B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				882D2F112EAEB85900B6C16B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		882D2F1D2EAEB88D00B6C16B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		882D2F1E2EAEB89400B6C16B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		882D2F1F2EAEB89C00B6C16B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		882D2F202EAEB8A300B6C16B /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		882D2F212EAEB8A900B6C16B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		882D2F222EAEB8B600B6C16B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				882D2F102EAEB85900B6C16B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		882D2F232EAEB8C400B6C16B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				882D2F122EAEB85900B6C16B /* SwiftSocialApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		882D2F242EAEB8D800B6C16B /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +182,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				882D2F042EAEB58000B6C16B /* SwiftSocial */,
 			);
 			name = SwiftSocial;
 			packageProductDependencies = (
@@ -109,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882D2F162EAEB85900B6C16B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882D2F142EAEB85900B6C16B /* ContentView.swift in Sources */,
+				882D2F152EAEB85900B6C16B /* SwiftSocialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

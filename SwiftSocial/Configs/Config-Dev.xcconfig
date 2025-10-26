@@ -1,0 +1,8 @@
+//
+//  Config-Dev.xcconfig
+//  SwiftSocial
+//
+//  Created by Phyo Myanmar Kyaw on 10/27/25.
+//
+
+GOOGLE_SERVICE_INFO_PLIST_PATH = ${PROJECT_DIR}/Configs/GoogleService-Info-Dev.plist

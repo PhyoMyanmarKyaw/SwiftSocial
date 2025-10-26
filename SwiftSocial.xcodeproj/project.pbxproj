@@ -10,6 +10,8 @@
 		882D2F142EAEB85900B6C16B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2F112EAEB85900B6C16B /* ContentView.swift */; };
 		882D2F152EAEB85900B6C16B /* SwiftSocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2F122EAEB85900B6C16B /* SwiftSocialApp.swift */; };
 		882D2F162EAEB85900B6C16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882D2F102EAEB85900B6C16B /* Assets.xcassets */; };
+		882D2F262EAEBA7A00B6C16B /* Config-Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 882D2F252EAEBA7A00B6C16B /* Config-Dev.xcconfig */; };
+		882D2F282EAEBA8D00B6C16B /* Config-Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 882D2F272EAEBA8D00B6C16B /* Config-Prod.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		882D2F102EAEB85900B6C16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882D2F112EAEB85900B6C16B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		882D2F122EAEB85900B6C16B /* SwiftSocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSocialApp.swift; sourceTree = "<group>"; };
+		882D2F252EAEBA7A00B6C16B /* Config-Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Dev.xcconfig"; sourceTree = "<group>"; };
+		882D2F272EAEBA8D00B6C16B /* Config-Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Prod.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 		882D2F242EAEB8D800B6C16B /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				882D2F252EAEBA7A00B6C16B /* Config-Dev.xcconfig */,
+				882D2F272EAEBA8D00B6C16B /* Config-Prod.xcconfig */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882D2F262EAEBA7A00B6C16B /* Config-Dev.xcconfig in Resources */,
+				882D2F282EAEBA8D00B6C16B /* Config-Prod.xcconfig in Resources */,
 				882D2F162EAEB85900B6C16B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

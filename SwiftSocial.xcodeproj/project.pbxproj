@@ -18,6 +18,8 @@
 		882D2F322EAEC01000B6C16B /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882D2F302EAEC01000B6C16B /* GoogleService-Info-Dev.plist */; };
 		882D2F332EAEC01000B6C16B /* GoogleService-Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882D2F312EAEC01000B6C16B /* GoogleService-Info-Prod.plist */; };
 		882D2F352EAEC13F00B6C16B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2F342EAEC13E00B6C16B /* Logger.swift */; };
+		882D2F372EAECB2B00B6C16B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2F362EAECB2900B6C16B /* SignUpView.swift */; };
+		884148832EAF36F900CCF493 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148822EAF36F200CCF493 /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		882D2F302EAEC01000B6C16B /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 		882D2F312EAEC01000B6C16B /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
 		882D2F342EAEC13E00B6C16B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		882D2F362EAECB2900B6C16B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		884148822EAF36F200CCF493 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		882D2F1B2EAEB87F00B6C16B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				884148822EAF36F200CCF493 /* SignUpViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 		882D2F1C2EAEB88500B6C16B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				882D2F362EAECB2900B6C16B /* SignUpView.swift */,
 				882D2F112EAEB85900B6C16B /* ContentView.swift */,
 			);
 			path = Views;
@@ -271,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882D2F372EAECB2B00B6C16B /* SignUpView.swift in Sources */,
 				882D2F142EAEB85900B6C16B /* ContentView.swift in Sources */,
+				884148832EAF36F900CCF493 /* SignUpViewModel.swift in Sources */,
 				882D2F352EAEC13F00B6C16B /* Logger.swift in Sources */,
 				882D2F152EAEB85900B6C16B /* SwiftSocialApp.swift in Sources */,
 			);

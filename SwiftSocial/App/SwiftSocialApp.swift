@@ -28,7 +28,7 @@ struct SwiftSocialApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(diContainer: diContainer, authViewModel: authViewModel)
+            RootView(diContainer: diContainer, authViewModel: authViewModel)
         }
     }
 }

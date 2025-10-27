@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RootView: View {
     
     let diContainer: DIContainer
     @ObservedObject private var authViewModel: AuthViewModel

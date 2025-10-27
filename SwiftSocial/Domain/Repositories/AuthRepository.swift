@@ -18,9 +18,19 @@ enum AuthError: Error {
     case unknown
 }
 
+// authenticated user's state
+enum AuthState {
+    case unknown
+    case loggedIn(uid: String)
+    case loggedOut
+}
+
 protocol AuthRepository {
     func login(withEmail email: String, password: String) async -> Result<Void, AuthError>
     func SignUp(withEmail email: String, password: String) async -> Result<Void, AuthError>
+    
+    var authState: AsyncStream<AuthState> { get } // emit current auth state
+    func logout() async -> Result<Void, AuthError>
 }
 
 extension AuthError {

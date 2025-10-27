@@ -29,6 +29,10 @@
 		884148922EAF859A00CCF493 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148912EAF859100CCF493 /* LoginViewModel.swift */; };
 		884148942EAF86C600CCF493 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148932EAF86C600CCF493 /* LoginView.swift */; };
 		884148962EAFC9DE00CCF493 /* AuthEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148952EAFC9DE00CCF493 /* AuthEntryView.swift */; };
+		884148982EAFD14C00CCF493 /* LogoutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148972EAFD14700CCF493 /* LogoutUseCase.swift */; };
+		8841489A2EAFD19600CCF493 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148992EAFD19600CCF493 /* MainAppView.swift */; };
+		8841489C2EAFD1A900CCF493 /* MainAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841489B2EAFD1A200CCF493 /* MainAppViewModel.swift */; };
+		8841489E2EAFD2DD00CCF493 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841489D2EAFD2D900CCF493 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		884148912EAF859100CCF493 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		884148932EAF86C600CCF493 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		884148952EAFC9DE00CCF493 /* AuthEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntryView.swift; sourceTree = "<group>"; };
+		884148972EAFD14700CCF493 /* LogoutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutUseCase.swift; sourceTree = "<group>"; };
+		884148992EAFD19600CCF493 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		8841489B2EAFD1A200CCF493 /* MainAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewModel.swift; sourceTree = "<group>"; };
+		8841489D2EAFD2D900CCF493 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +147,8 @@
 		882D2F1B2EAEB87F00B6C16B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8841489D2EAFD2D900CCF493 /* AuthViewModel.swift */,
+				8841489B2EAFD1A200CCF493 /* MainAppViewModel.swift */,
 				884148912EAF859100CCF493 /* LoginViewModel.swift */,
 				884148822EAF36F200CCF493 /* SignUpViewModel.swift */,
 			);
@@ -152,6 +162,7 @@
 				882D2F112EAEB85900B6C16B /* ContentView.swift */,
 				884148932EAF86C600CCF493 /* LoginView.swift */,
 				884148952EAFC9DE00CCF493 /* AuthEntryView.swift */,
+				884148992EAFD19600CCF493 /* MainAppView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 		882D2F1D2EAEB88D00B6C16B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				884148972EAFD14700CCF493 /* LogoutUseCase.swift */,
 				8841488D2EAF816000CCF493 /* LoginUseCase.swift */,
 				884148862EAF3AFC00CCF493 /* SignUpUseCase.swift */,
 			);
@@ -314,16 +326,20 @@
 			files = (
 				882D2F372EAECB2B00B6C16B /* SignUpView.swift in Sources */,
 				884148902EAF83F300CCF493 /* String+Extension.swift in Sources */,
+				884148982EAFD14C00CCF493 /* LogoutUseCase.swift in Sources */,
 				882D2F142EAEB85900B6C16B /* ContentView.swift in Sources */,
 				884148832EAF36F900CCF493 /* SignUpViewModel.swift in Sources */,
 				884148872EAF3B0400CCF493 /* SignUpUseCase.swift in Sources */,
 				884148852EAF3A2900CCF493 /* AuthRepository.swift in Sources */,
 				882D2F352EAEC13F00B6C16B /* Logger.swift in Sources */,
+				8841489E2EAFD2DD00CCF493 /* AuthViewModel.swift in Sources */,
+				8841489C2EAFD1A900CCF493 /* MainAppViewModel.swift in Sources */,
 				884148962EAFC9DE00CCF493 /* AuthEntryView.swift in Sources */,
 				882D2F152EAEB85900B6C16B /* SwiftSocialApp.swift in Sources */,
 				884148922EAF859A00CCF493 /* LoginViewModel.swift in Sources */,
 				8841488C2EAF422300CCF493 /* DIContainer.swift in Sources */,
 				884148942EAF86C600CCF493 /* LoginView.swift in Sources */,
+				8841489A2EAFD19600CCF493 /* MainAppView.swift in Sources */,
 				884148892EAF3C5600CCF493 /* AuthRepositoryImpl.swift in Sources */,
 				8841488E2EAF816500CCF493 /* LoginUseCase.swift in Sources */,
 			);

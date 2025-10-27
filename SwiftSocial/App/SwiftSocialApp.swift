@@ -13,11 +13,22 @@ struct SwiftSocialApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    private let diContainer = DIContainer()
+    private let diContainer: DIContainer
+    
+    @StateObject private var authViewModel: AuthViewModel
+    
+    init() {
+        // single container
+        let container = DIContainer()
+        self.diContainer = container
+        _authViewModel = StateObject(
+            wrappedValue: container.makeAuthViewModel()
+        )
+    }
     
     var body: some Scene {
         WindowGroup {
-            ContentView(diContainer: diContainer)
+            ContentView(diContainer: diContainer, authViewModel: authViewModel)
         }
     }
 }

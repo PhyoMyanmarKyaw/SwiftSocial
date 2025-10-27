@@ -34,4 +34,30 @@ class AuthRepositoryImpl: AuthRepository {
             }
         }
     }
+    
+    func login(withEmail email: String, password: String) async -> Result<Void, AuthError> {
+        
+        do {
+            try await Auth.auth().signIn(withEmail: email, password: password)
+            return .success(())
+            
+        } catch let error as NSError {
+            Log
+                .message(
+                    "Firebase login failed: \(error.localizedDescription)",
+                    level: .error
+                )
+            
+            switch AuthErrorCode(rawValue: error.code) {
+            case .invalidEmail:
+                return .failure(.invalidEmail)
+            case .wrongPassword:
+                return .failure(.wrongPassword)
+            case .userNotFound, .userDisabled:
+                return .failure(.userNotFound)
+            default:
+                return .failure(.unknown)
+            }
+        }
+    }
 }

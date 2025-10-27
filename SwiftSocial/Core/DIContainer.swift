@@ -19,10 +19,17 @@ class DIContainer {
     private lazy var signUpUseCase: SignUpUseCase = SignUpUseCase(
         repository: authRepository
     )
+    private lazy var loginUseCase: LoginUseCase = LoginUseCase(
+        repository: authRepository
+    )
     
     // MARK: - ViewModels (Factories)
     // factory methods for VM , bec > a new instance should be created every time a View is created
     func makeSignUpViewModel() -> SignUpViewModel {
         return SignUpViewModel(signUpUseCase: signUpUseCase)
+    }
+    
+    func makeLoginViewModel() -> LoginViewModel {
+        return LoginViewModel(loginUseCase: loginUseCase)
     }
 }

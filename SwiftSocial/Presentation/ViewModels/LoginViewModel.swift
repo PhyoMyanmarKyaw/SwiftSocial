@@ -1,5 +1,5 @@
 //
-//  SignUpViewModel.swift
+//  LoginViewModel.swift
 //  SwiftSocial
 //
 //  Created by Phyo Myanmar Kyaw on 10/27/25.
@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class SignUpViewModel: ObservableObject {
+class LoginViewModel: ObservableObject {
     
     @Published var email = ""
     @Published var password = ""
@@ -16,23 +16,24 @@ class SignUpViewModel: ObservableObject {
     @Published var alertMessage = ""
     @Published var showAlert = false
     
-    private let signUpUseCase: SignUpUseCase
+    private let loginUseCase: LoginUseCase
     
-    init(signUpUseCase: SignUpUseCase) {
-        self.signUpUseCase = signUpUseCase
+    init(loginUseCase: LoginUseCase) {
+        self.loginUseCase = loginUseCase
     }
     
-    func signUp() async {
+    func login() async {
         isLoading = true
         
-        let result = await signUpUseCase.execute(
+        let result = await loginUseCase.execute(
             withEmail: email,
             password: password
         )
         
         switch result {
         case .success():
-            alertMessage = "Sign up successful! You can now log in."
+            // navigate to main page
+            alertMessage = "Login Successful!"
         case .failure(let error):
             alertMessage = error.userFriendlyMessage
         }

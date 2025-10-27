@@ -12,10 +12,34 @@ enum AuthError: Error {
     case weakPassword
     case invalidEmail
     case emailInUse
+    case wrongPassword
+    case userNotFound
     case serverError(String)
     case unknown
 }
 
 protocol AuthRepository {
+    func login(withEmail email: String, password: String) async -> Result<Void, AuthError>
     func SignUp(withEmail email: String, password: String) async -> Result<Void, AuthError>
+}
+
+extension AuthError {
+    var userFriendlyMessage: String {
+        switch self {
+        case .weakPassword:
+            return "The password is too weak. Please use at least 6 characters."
+        case .invalidEmail:
+            return "The email address is badly formatted."
+        case .emailInUse:
+            return "This email address is already in use by another account."
+        case .wrongPassword:
+            return "Incorrect password. Please try again."
+        case .userNotFound:
+            return "No account found with this email address. Please sign up."
+        case .serverError(let message):
+            return "A server error occurred: \(message)"
+        case .unknown:
+            return "An unexpected error occurred. Please try again."
+        }
+    }
 }

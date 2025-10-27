@@ -12,6 +12,6 @@ struct ContentView: View {
     let diContainer: DIContainer
     
     var body: some View {
-        SignUpView(viewModel: diContainer.makeSignUpViewModel())
+        AuthEntryView(diContainer: diContainer)
     }
 }

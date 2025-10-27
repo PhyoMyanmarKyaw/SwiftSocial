@@ -1,5 +1,5 @@
 //
-//  SignUpUseCase.swift
+//  LoginUseCase.swift
 //  SwiftSocial
 //
 //  Created by Phyo Myanmar Kyaw on 10/27/25.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignUpUseCase {
+class LoginUseCase {
     
     private let repository: AuthRepository
     
@@ -16,11 +16,11 @@ class SignUpUseCase {
     }
     
     func execute(withEmail email: String, password: String) async -> Result<Void, AuthError> {
-        // if password.count < 8 { return .failure(.weakPassword)
+        
         guard email.isNotEmpty else { return .failure(.invalidEmail) }
         guard email.isValidEmail else { return .failure(.invalidEmail) }
         guard password.isNotEmpty else { return .failure(.wrongPassword) }
         
-        return await repository.SignUp(withEmail: email, password: password)
+        return await repository.login(withEmail: email, password: password)
     }
 }

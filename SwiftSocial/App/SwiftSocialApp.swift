@@ -13,9 +13,11 @@ struct SwiftSocialApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    private let diContainer = DIContainer()
+    
     var body: some Scene {
         WindowGroup {
-            SignUpView()
+            ContentView(diContainer: diContainer)
         }
     }
 }

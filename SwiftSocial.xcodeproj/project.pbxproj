@@ -20,6 +20,10 @@
 		882D2F352EAEC13F00B6C16B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2F342EAEC13E00B6C16B /* Logger.swift */; };
 		882D2F372EAECB2B00B6C16B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2F362EAECB2900B6C16B /* SignUpView.swift */; };
 		884148832EAF36F900CCF493 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148822EAF36F200CCF493 /* SignUpViewModel.swift */; };
+		884148852EAF3A2900CCF493 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148842EAF3A2400CCF493 /* AuthRepository.swift */; };
+		884148872EAF3B0400CCF493 /* SignUpUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148862EAF3AFC00CCF493 /* SignUpUseCase.swift */; };
+		884148892EAF3C5600CCF493 /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148882EAF3C5100CCF493 /* AuthRepositoryImpl.swift */; };
+		8841488C2EAF422300CCF493 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841488B2EAF421F00CCF493 /* DIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		882D2F342EAEC13E00B6C16B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		882D2F362EAECB2900B6C16B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		884148822EAF36F200CCF493 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		884148842EAF3A2400CCF493 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		884148862EAF3AFC00CCF493 /* SignUpUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUseCase.swift; sourceTree = "<group>"; };
+		884148882EAF3C5100CCF493 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
+		8841488B2EAF421F00CCF493 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				882D2F242EAEB8D800B6C16B /* Configs */,
+				8841488A2EAF421400CCF493 /* Core */,
 				882D2F232EAEB8C400B6C16B /* App */,
 				882D2F1A2EAEB87400B6C16B /* Presentation */,
 				882D2F192EAEB87000B6C16B /* Domain */,
@@ -136,6 +145,7 @@
 		882D2F1D2EAEB88D00B6C16B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				884148862EAF3AFC00CCF493 /* SignUpUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -143,6 +153,7 @@
 		882D2F1E2EAEB89400B6C16B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				884148842EAF3A2400CCF493 /* AuthRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -164,6 +175,7 @@
 		882D2F212EAEB8A900B6C16B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				884148882EAF3C5100CCF493 /* AuthRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -193,6 +205,14 @@
 				882D2F272EAEBA8D00B6C16B /* Config-Prod.xcconfig */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		8841488A2EAF421400CCF493 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8841488B2EAF421F00CCF493 /* DIContainer.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +300,12 @@
 				882D2F372EAECB2B00B6C16B /* SignUpView.swift in Sources */,
 				882D2F142EAEB85900B6C16B /* ContentView.swift in Sources */,
 				884148832EAF36F900CCF493 /* SignUpViewModel.swift in Sources */,
+				884148872EAF3B0400CCF493 /* SignUpUseCase.swift in Sources */,
+				884148852EAF3A2900CCF493 /* AuthRepository.swift in Sources */,
 				882D2F352EAEC13F00B6C16B /* Logger.swift in Sources */,
 				882D2F152EAEB85900B6C16B /* SwiftSocialApp.swift in Sources */,
+				8841488C2EAF422300CCF493 /* DIContainer.swift in Sources */,
+				884148892EAF3C5600CCF493 /* AuthRepositoryImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

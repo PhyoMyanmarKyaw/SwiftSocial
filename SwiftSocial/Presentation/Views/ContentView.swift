@@ -8,17 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let diContainer: DIContainer
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        SignUpView(viewModel: diContainer.makeSignUpViewModel())
     }
-}
-
-#Preview {
-    ContentView()
 }

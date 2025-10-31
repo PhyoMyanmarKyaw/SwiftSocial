@@ -26,7 +26,8 @@ struct MainAppView: View {
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            Text("Main Feed")
+            
+            FeedView(viewModel: diContainer.makeFeedViewModel())
             
             Button(action: {
                 isCreatePostSheetPresented = true

@@ -28,6 +28,9 @@ class DIContainer {
     private lazy var createPostUseCase: CreatePostUseCase = CreatePostUseCase(
         repository: postRepository
     )
+    private lazy var fetchPostsUseCase: FetchPostsUseCase = FetchPostsUseCase(
+        repository: postRepository
+    )
     
     // MARK: - ViewModels (Factories)
     // factory methods for VM , bec > a new instance should be created every time a View is created
@@ -52,5 +55,9 @@ class DIContainer {
             authorUID: authorUID,
             createPostUseCase: createPostUseCase
         )
+    }
+    
+    func makeFeedViewModel() -> FeedViewModel {
+        return FeedViewModel(fetchPostsUseCase: fetchPostsUseCase)
     }
 }

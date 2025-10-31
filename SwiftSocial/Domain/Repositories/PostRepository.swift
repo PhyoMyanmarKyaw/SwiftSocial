@@ -14,4 +14,5 @@ enum PostError: Error {
 
 protocol PostRepository {
     func createPost(_ post: Post) async -> Result<Void, PostError>
+    var posts: AsyncStream<Result<[Post], PostError>> { get }
 }

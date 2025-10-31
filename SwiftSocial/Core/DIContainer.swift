@@ -13,7 +13,7 @@ class DIContainer {
     
     // lazy var - the obj is only created the first time it's needed.
     private lazy var authRepository: AuthRepository = AuthRepositoryImpl()
-    
+    private lazy var postRepository: PostRepository = PostRepositoryImpl()
     
     // MARK: - Use Cases
     private lazy var signUpUseCase: SignUpUseCase = SignUpUseCase(
@@ -24,6 +24,9 @@ class DIContainer {
     )
     private lazy var logoutUseCase: LogoutUseCase = LogoutUseCase(
         repository: authRepository
+    )
+    private lazy var createPostUseCase: CreatePostUseCase = CreatePostUseCase(
+        repository: postRepository
     )
     
     // MARK: - ViewModels (Factories)
@@ -42,5 +45,12 @@ class DIContainer {
     
     func makeAuthViewModel() -> AuthViewModel {
         return AuthViewModel(authRepository: authRepository)
+    }
+    
+    func makeCreatePostViewModel(authorUID: String) -> CreatePostViewModel {
+        return CreatePostViewModel(
+            authorUID: authorUID,
+            createPostUseCase: createPostUseCase
+        )
     }
 }

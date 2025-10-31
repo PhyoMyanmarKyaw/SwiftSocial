@@ -33,6 +33,12 @@
 		8841489A2EAFD19600CCF493 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884148992EAFD19600CCF493 /* MainAppView.swift */; };
 		8841489C2EAFD1A900CCF493 /* MainAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841489B2EAFD1A200CCF493 /* MainAppViewModel.swift */; };
 		8841489E2EAFD2DD00CCF493 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841489D2EAFD2D900CCF493 /* AuthViewModel.swift */; };
+		8873D3142EB4B23100AFA89F /* CreatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873D3132EB4B22A00AFA89F /* CreatePostViewModel.swift */; };
+		8873D3162EB4B4B700AFA89F /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873D3152EB4B4B100AFA89F /* CreatePostView.swift */; };
+		88DDE0132EB3F53500B35EC2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DDE0122EB3F52F00B35EC2 /* Post.swift */; };
+		88DDE0152EB3F59800B35EC2 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DDE0142EB3F59300B35EC2 /* PostRepository.swift */; };
+		88DDE0172EB3F61800B35EC2 /* CreatePostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DDE0162EB3F60F00B35EC2 /* CreatePostUseCase.swift */; };
+		88DDE0192EB3FD0E00B35EC2 /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DDE0182EB3FD0700B35EC2 /* PostRepositoryImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		884148992EAFD19600CCF493 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		8841489B2EAFD1A200CCF493 /* MainAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewModel.swift; sourceTree = "<group>"; };
 		8841489D2EAFD2D900CCF493 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		8873D3132EB4B22A00AFA89F /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
+		8873D3152EB4B4B100AFA89F /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		88DDE0122EB3F52F00B35EC2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		88DDE0142EB3F59300B35EC2 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		88DDE0162EB3F60F00B35EC2 /* CreatePostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostUseCase.swift; sourceTree = "<group>"; };
+		88DDE0182EB3FD0700B35EC2 /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,7 @@
 		882D2F1A2EAEB87400B6C16B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8873D3102EB4B1E900AFA89F /* CreatePost */,
 				8841489F2EAFDE8200CCF493 /* Auth */,
 				884148A52EAFDEE000CCF493 /* Main */,
 				884148A22EAFDEAA00CCF493 /* Settings */,
@@ -157,6 +170,7 @@
 		882D2F1D2EAEB88D00B6C16B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				88DDE0162EB3F60F00B35EC2 /* CreatePostUseCase.swift */,
 				884148972EAFD14700CCF493 /* LogoutUseCase.swift */,
 				8841488D2EAF816000CCF493 /* LoginUseCase.swift */,
 				884148862EAF3AFC00CCF493 /* SignUpUseCase.swift */,
@@ -167,6 +181,7 @@
 		882D2F1E2EAEB89400B6C16B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				88DDE0142EB3F59300B35EC2 /* PostRepository.swift */,
 				884148842EAF3A2400CCF493 /* AuthRepository.swift */,
 			);
 			path = Repositories;
@@ -175,6 +190,7 @@
 		882D2F1F2EAEB89C00B6C16B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				88DDE0122EB3F52F00B35EC2 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +205,7 @@
 		882D2F212EAEB8A900B6C16B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				88DDE0182EB3FD0700B35EC2 /* PostRepositoryImpl.swift */,
 				884148882EAF3C5100CCF493 /* AuthRepositoryImpl.swift */,
 			);
 			path = Repositories;
@@ -298,6 +315,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8873D3102EB4B1E900AFA89F /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+				8873D3122EB4B1FA00AFA89F /* ViewModels */,
+				8873D3112EB4B1F400AFA89F /* Views */,
+			);
+			path = CreatePost;
+			sourceTree = "<group>";
+		};
+		8873D3112EB4B1F400AFA89F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8873D3152EB4B4B100AFA89F /* CreatePostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8873D3122EB4B1FA00AFA89F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8873D3132EB4B22A00AFA89F /* CreatePostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				882D2F372EAECB2B00B6C16B /* SignUpView.swift in Sources */,
+				88DDE0152EB3F59800B35EC2 /* PostRepository.swift in Sources */,
 				884148902EAF83F300CCF493 /* String+Extension.swift in Sources */,
 				884148982EAFD14C00CCF493 /* LogoutUseCase.swift in Sources */,
 				882D2F142EAEB85900B6C16B /* RootView.swift in Sources */,
@@ -388,6 +431,7 @@
 				884148872EAF3B0400CCF493 /* SignUpUseCase.swift in Sources */,
 				884148852EAF3A2900CCF493 /* AuthRepository.swift in Sources */,
 				882D2F352EAEC13F00B6C16B /* Logger.swift in Sources */,
+				88DDE0192EB3FD0E00B35EC2 /* PostRepositoryImpl.swift in Sources */,
 				8841489E2EAFD2DD00CCF493 /* AuthViewModel.swift in Sources */,
 				8841489C2EAFD1A900CCF493 /* MainAppViewModel.swift in Sources */,
 				884148962EAFC9DE00CCF493 /* AuthEntryView.swift in Sources */,
@@ -396,7 +440,11 @@
 				8841488C2EAF422300CCF493 /* DIContainer.swift in Sources */,
 				884148942EAF86C600CCF493 /* LoginView.swift in Sources */,
 				8841489A2EAFD19600CCF493 /* MainAppView.swift in Sources */,
+				88DDE0132EB3F53500B35EC2 /* Post.swift in Sources */,
+				8873D3142EB4B23100AFA89F /* CreatePostViewModel.swift in Sources */,
+				8873D3162EB4B4B700AFA89F /* CreatePostView.swift in Sources */,
 				884148892EAF3C5600CCF493 /* AuthRepositoryImpl.swift in Sources */,
+				88DDE0172EB3F61800B35EC2 /* CreatePostUseCase.swift in Sources */,
 				8841488E2EAF816500CCF493 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

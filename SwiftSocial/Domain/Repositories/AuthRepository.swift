@@ -8,7 +8,7 @@
 import Foundation
 
 // custom error type for our domain
-enum AuthError: Error {
+enum AuthError: Error, Equatable {
     case weakPassword
     case invalidEmail
     case emailInUse
@@ -16,6 +16,9 @@ enum AuthError: Error {
     case userNotFound
     case serverError(String)
     case unknown
+    
+    case emptyEmail
+    case emptyPassword
 }
 
 // authenticated user's state
@@ -38,12 +41,16 @@ extension AuthError {
         switch self {
         case .weakPassword:
             return "The password is too weak. Please use at least 6 characters."
+        case .emptyEmail:
+            return "Please enter your email address"
         case .invalidEmail:
             return "The email address is badly formatted."
         case .emailInUse:
             return "This email address is already in use by another account."
         case .wrongPassword:
             return "Incorrect password. Please try again."
+        case .emptyPassword:
+            return "Please enter your password"
         case .userNotFound:
             return "No account found with this email address. Please sign up."
         case .serverError(let message):

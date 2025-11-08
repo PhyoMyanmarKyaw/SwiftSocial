@@ -45,6 +45,16 @@
 		88DDE0192EB3FD0E00B35EC2 /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DDE0182EB3FD0700B35EC2 /* PostRepositoryImpl.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		886FB7722EBDFCB300465A22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 882D2EFA2EAEB58000B6C16B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 882D2F012EAEB58000B6C16B;
+			remoteInfo = SwiftSocial;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		882D2F022EAEB58000B6C16B /* SwiftSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882D2F102EAEB85900B6C16B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +80,7 @@
 		884148992EAFD19600CCF493 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		8841489B2EAFD1A200CCF493 /* MainAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewModel.swift; sourceTree = "<group>"; };
 		8841489D2EAFD2D900CCF493 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		886FB76E2EBDFCB300465A22 /* SwiftSocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8873D3132EB4B22A00AFA89F /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
 		8873D3152EB4B4B100AFA89F /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		8873D3172EB4BDE800AFA89F /* FetchPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCase.swift; sourceTree = "<group>"; };
@@ -82,6 +93,14 @@
 		88DDE0182EB3FD0700B35EC2 /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		886FB76F2EBDFCB300465A22 /* SwiftSocialTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SwiftSocialTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		882D2EFF2EAEB58000B6C16B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -93,6 +112,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		886FB76B2EBDFCB300465A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				882D2F132EAEB85900B6C16B /* SwiftSocial */,
+				886FB76F2EBDFCB300465A22 /* SwiftSocialTests */,
 				882D2F032EAEB58000B6C16B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				882D2F022EAEB58000B6C16B /* SwiftSocial.app */,
+				886FB76E2EBDFCB300465A22 /* SwiftSocialTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -401,6 +429,29 @@
 			productReference = 882D2F022EAEB58000B6C16B /* SwiftSocial.app */;
 			productType = "com.apple.product-type.application";
 		};
+		886FB76D2EBDFCB300465A22 /* SwiftSocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 886FB7762EBDFCB300465A22 /* Build configuration list for PBXNativeTarget "SwiftSocialTests" */;
+			buildPhases = (
+				886FB76A2EBDFCB300465A22 /* Sources */,
+				886FB76B2EBDFCB300465A22 /* Frameworks */,
+				886FB76C2EBDFCB300465A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				886FB7732EBDFCB300465A22 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				886FB76F2EBDFCB300465A22 /* SwiftSocialTests */,
+			);
+			name = SwiftSocialTests;
+			packageProductDependencies = (
+			);
+			productName = SwiftSocialTests;
+			productReference = 886FB76E2EBDFCB300465A22 /* SwiftSocialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -413,6 +464,10 @@
 				TargetAttributes = {
 					882D2F012EAEB58000B6C16B = {
 						CreatedOnToolsVersion = 26.0.1;
+					};
+					886FB76D2EBDFCB300465A22 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 882D2F012EAEB58000B6C16B;
 					};
 				};
 			};
@@ -434,6 +489,7 @@
 			projectRoot = "";
 			targets = (
 				882D2F012EAEB58000B6C16B /* SwiftSocial */,
+				886FB76D2EBDFCB300465A22 /* SwiftSocialTests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,6 +504,13 @@
 				882D2F332EAEC01000B6C16B /* GoogleService-Info-Prod.plist in Resources */,
 				882D2F282EAEBA8D00B6C16B /* Config-Prod.xcconfig in Resources */,
 				882D2F162EAEB85900B6C16B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		886FB76C2EBDFCB300465A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +552,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		886FB76A2EBDFCB300465A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		886FB7732EBDFCB300465A22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 882D2F012EAEB58000B6C16B /* SwiftSocial */;
+			targetProxy = 886FB7722EBDFCB300465A22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		882D2F0B2EAEB58100B6C16B /* Debug */ = {
@@ -681,6 +759,48 @@
 			};
 			name = Release;
 		};
+		886FB7742EBDFCB300465A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR2WPVPVRV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phyomyanmarkyaw.SwiftSocialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSocial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftSocial";
+			};
+			name = Debug;
+		};
+		886FB7752EBDFCB300465A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR2WPVPVRV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phyomyanmarkyaw.SwiftSocialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSocial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftSocial";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -698,6 +818,15 @@
 			buildConfigurations = (
 				882D2F0E2EAEB58100B6C16B /* Debug */,
 				882D2F0F2EAEB58100B6C16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		886FB7762EBDFCB300465A22 /* Build configuration list for PBXNativeTarget "SwiftSocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				886FB7742EBDFCB300465A22 /* Debug */,
+				886FB7752EBDFCB300465A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

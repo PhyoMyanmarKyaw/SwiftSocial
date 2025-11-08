@@ -17,9 +17,9 @@ class LoginUseCase {
     
     func execute(withEmail email: String, password: String) async -> Result<Void, AuthError> {
         
-        guard email.isNotEmpty else { return .failure(.invalidEmail) }
+        guard email.isNotEmpty else { return .failure(.emptyEmail) }
         guard email.isValidEmail else { return .failure(.invalidEmail) }
-        guard password.isNotEmpty else { return .failure(.wrongPassword) }
+        guard password.isNotEmpty else { return .failure(.emptyPassword) }
         
         return await repository.login(withEmail: email, password: password)
     }
